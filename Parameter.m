@@ -28,13 +28,14 @@ function Process_data = replaceDataInRangeForIndexes(data, srcIdx1List, srcIdx2,
 end
 
 % Define time range and first indices (multiple {X}{5})
-timeRange = [0, 1];
+%timeRange = [0, 1];
 % firstIndices = 1:15; % Apply to data{1}{5} through data{15}{5}
 firstIndices = 1:3;
 % Process data
-Step_Process_data = replaceDataInRangeForIndexes(data, 1:3, 5, [0,1]);
-Ramp1_Process_data = replaceDataInRangeForIndexes(data, 4:5, 5, [0,1.25]);
-Ramp2_Process_data = replaceDataInRangeForIndexes(data, 6, 5, [0,1]);
-Sine_Process_data = replaceDataInRangeForIndexes(data, 7, 5, [0,0.1]);
-Stair_step_Process_data = replaceDataInRangeForIndexes(data, 10:12, 5, [0,2]);
-Sine_ramp_Process_data = replaceDataInRangeForIndexes(data, 13:15, 5, [0,0.75]);
+%Step_Process_data = replaceDataInRangeForIndexes(data, 1:3, 5, [0,1]);
+%Ramp_Process_data = replaceDataInRangeForIndexes(data, 4:6, 5, [0,1.25]);
+%Ramp2_Process_data = replaceDataInRangeForIndexes(data, 6, 5, [0,1]);
+%Sine_Process_data = replaceDataInRangeForIndexes(data, 7, 5, [0,0.1]);
+Stair_step_Process_data = replaceDataInRangeForIndexes(data, 18:20, 5, [0,2]);
+%Sine_ramp_Process_data = replaceDataInRangeForIndexes(data, 13:15, 5, [0,0.75]);
+%Chirb_Process_data = replaceDataInRangeForIndexes(data, 1:3, 4, [0,0.2]);
